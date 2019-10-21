@@ -1,0 +1,177 @@
+@charset "utf-8";
+ul {
+  list-style-type: none;
+  height:5px;
+  text-align:center;
+  padding: 25px;
+  margin:0 auto;
+  width: 430px;
+  font-family: "jura", Times, jura;
+}
+li {
+  float: left;
+  width: 80px;
+  padding: 0;
+  margin: 0;
+}
+input[type=text], 
+input[type=password] {
+  width: 50%;
+  padding: 5px;
+  margin: 8px;
+  display: inline-block;
+  border: 1px solid #3DDAED;
+}
+
+button {
+  background-color: #41C3EB;
+  color: white;
+  padding: 3px 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  
+  
+}
+button:hover {
+  opacity: 0.3;
+}
+.cancelbtn {
+  width: auto;
+  padding: 3px 10px;
+  background-color: #f44336;
+}
+.img {
+  text-align: center;
+  margin: 25px  25px 0;
+  position: relative;
+}
+img.avatar {
+  width: 18%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 15px;
+  text-align: center;
+  font-family: "jura", Times, jura;
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: -1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 50px;
+  text-align: center;
+}
+
+.box {
+  background-color: #fefefe;
+  margin: 5% auto -5% auto; 
+  width: 50%; 
+  border: 1px solid #888;
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  color: #000;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+@media screen and (max-width: 300px) {
+  span.password {
+     display: block;
+     float: none;
+  }
+ .cancelbtn {
+     width: 100%;
+  }
+}
+.logo{
+ position: absolute;
+ top: 25px;
+ z-index: -1;
+ width: 90px;
+ float: left;
+
+	}
+input[type=text]:focus, 
+input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+a {
+  color: dodgerblue;
+}
+.login {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+#reg-b{
+  background-color: #41C3EB;
+  color: white;
+  padding: 3px 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+#login-b{
+  float: left;
+  margin-left:25px;
+}
+.regerror{
+  padding-top: 15px;
+  font-family: arial;
+  font-size: 16px;
+  color: red;
+  text-align: center;
+}
+.regsuccess{
+  padding-top: 15px;
+  font-family: arial;
+  font-size: 16px;
+  color: green;
+  text-align: center;
+}
+#logout-b{
+  position: absolute;
+ top: 0px;
+ z-index: -1;
+ width: 90px;
+ float: left;
+}
+#logout{
+  position: absolute;
+ top: 0px;
+ z-index: -1;
+ width: 90px;
+ float: right;
+}
